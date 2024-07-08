@@ -1,8 +1,12 @@
 import React from "react";
-import SideBar from "../../components/SideBar";
+import Features from "../../components/Features";
 
 const Home = () => {
-  return <div>home</div>;
+  return (
+    <div className="flex flex-col">
+      <Features />
+    </div>
+  );
 };
 
 export default Home;

@@ -173,11 +173,7 @@ export default function SideBar({ open, setOpen, children }) {
           ))}
         </List>
       </Drawer>
-      <Main open={open}>
-        <DrawerHeader />
-        main
-        {children}
-      </Main>
+      <Main open={open}>{children}</Main>
     </Box>
   );
 }
