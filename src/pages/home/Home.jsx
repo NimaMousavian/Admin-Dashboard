@@ -2,9 +2,10 @@ import React from "react";
 import Features from "../../components/Features";
 import Chart from "../../components/common/Chart";
 import WidgetSm from "../../components/WidgetSm";
+import WidgetLg from "../../components/WidgetLg";
 import { userAnalyticsData } from "./../../datas";
 import { newJoinMembers } from "./../../datas";
-import WidgetLg from "../../components/WidgetLg";
+import { transactions } from "./../../datas";
 
 const Home = () => {
   return (
@@ -19,7 +20,7 @@ const Home = () => {
       />
       <div className="flex flex-row space-x-2">
         <WidgetSm members={newJoinMembers} />
-        <WidgetLg />
+        <WidgetLg transactions={transactions} />
       </div>
     </div>
   );

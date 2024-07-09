@@ -88,4 +88,4 @@ const transactions = [
   },
 ];
 
-export { userAnalyticsData, newJoinMembers };
+export { userAnalyticsData, newJoinMembers, transactions };
