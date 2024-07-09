@@ -191,4 +191,67 @@ const users = [
   },
 ];
 
-export { userAnalyticsData, newJoinMembers, transactions, users };
+const products = [
+  {
+    id: 1,
+    model: "Dell XPS 13",
+    imageUrl: "/images/products/dell-xps-13.jpg",
+    price: 999.99,
+  },
+  {
+    id: 2,
+    model: "MacBook Air",
+    imageUrl: "/images/products/macbook-air.jpg",
+    price: 1199.99,
+  },
+  {
+    id: 3,
+    model: "HP Spectre x360",
+    imageUrl: "/images/products/hp-spectre-x360.jpg",
+    price: 1299.99,
+  },
+  {
+    id: 4,
+    model: "Lenovo ThinkPad X1 Carbon",
+    imageUrl: "/images/products/lenovo-thinkpad-x1.jpg",
+    price: 1399.99,
+  },
+  {
+    id: 5,
+    model: "Asus ZenBook 14",
+    imageUrl: "/images/products/asus-zenbook-14.jpg",
+    price: 899.99,
+  },
+  {
+    id: 6,
+    model: "Acer Swift 3",
+    imageUrl: "/images/products/acer-swift-3.jpg",
+    price: 799.99,
+  },
+  {
+    id: 7,
+    model: "Microsoft Surface Laptop 4",
+    imageUrl: "/images/products/surface-laptop-4.jpg",
+    price: 1499.99,
+  },
+  {
+    id: 8,
+    model: "Razer Blade Stealth 13",
+    imageUrl: "/images/products/razer-blade-stealth-13.jpg",
+    price: 1599.99,
+  },
+  {
+    id: 9,
+    model: "Samsung Galaxy Book Pro",
+    imageUrl: "/images/products/galaxy-book-pro.jpg",
+    price: 1199.99,
+  },
+  {
+    id: 10,
+    model: "LG Gram 17",
+    imageUrl: "/images/products/lg-gram-17.jpg",
+    price: 1699.99,
+  },
+];
+
+export { userAnalyticsData, newJoinMembers, transactions, users, products };
