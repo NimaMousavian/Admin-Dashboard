@@ -1,7 +1,10 @@
 import React from "react";
 import Features from "../../components/Features";
-import { userAnalyticsData } from "./../../datas";
 import Chart from "../../components/common/Chart";
+import WidgetSm from "../../components/WidgetSm";
+import { userAnalyticsData } from "./../../datas";
+import { newJoinMembers } from "./../../datas";
+import WidgetLg from "../../components/WidgetLg";
 
 const Home = () => {
   return (
@@ -14,6 +17,10 @@ const Home = () => {
         xAxisDataKey={"month"}
         grid={true}
       />
+      <div className="flex flex-row space-x-2">
+        <WidgetSm members={newJoinMembers} />
+        <WidgetLg />
+      </div>
     </div>
   );
 };
