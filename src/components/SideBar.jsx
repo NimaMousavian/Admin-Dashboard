@@ -37,7 +37,7 @@ const sideBarItems1 = [
 ];
 const sideBarItems2 = [
   { text: "Users", link: "/users", icon: <PeopleAltIcon /> },
-  { text: "Nwe User", link: "/newuser", icon: <PersonAddAlt1Icon /> },
+  { text: "New User", link: "/newuser", icon: <PersonAddAlt1Icon /> },
   { text: "Products", link: "/products", icon: <InventoryIcon /> },
   { text: "Transactions", link: "/transactions", icon: <AttachMoneyIcon /> },
   { text: "Reports", link: "/reports", icon: <BarChartIcon /> },
@@ -123,7 +123,9 @@ export default function SideBar({ open, setOpen, children }) {
             <ListItem key={item.text} disablePadding>
               <Link to={item.link} className="link">
                 <ListItemButton>
-                  <ListItemIcon>{item.icon}</ListItemIcon>
+                  <ListItemIcon style={{ color: "#7b3efb" }}>
+                    {item.icon}
+                  </ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItemButton>
               </Link>
@@ -137,7 +139,9 @@ export default function SideBar({ open, setOpen, children }) {
             <ListItem key={item.text} disablePadding>
               <Link to={item.link} className="link">
                 <ListItemButton>
-                  <ListItemIcon>{item.icon}</ListItemIcon>
+                  <ListItemIcon style={{ color: "#7b3efb" }}>
+                    {item.icon}
+                  </ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItemButton>
               </Link>
@@ -150,7 +154,9 @@ export default function SideBar({ open, setOpen, children }) {
             <ListItem key={item.text} disablePadding>
               <Link to={item.link} className="link">
                 <ListItemButton>
-                  <ListItemIcon>{item.icon}</ListItemIcon>
+                  <ListItemIcon style={{ color: "#7b3efb" }}>
+                    {item.icon}
+                  </ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItemButton>
               </Link>
