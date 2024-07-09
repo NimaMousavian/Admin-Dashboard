@@ -3,11 +3,9 @@ import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import CssBaseline from "@mui/material/CssBaseline";
-import MuiAppBar from "@mui/material/AppBar";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
@@ -24,7 +22,6 @@ import InventoryIcon from "@mui/icons-material/Inventory";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import DynamicFeedIcon from "@mui/icons-material/DynamicFeed";
-import MessageIcon from "@mui/icons-material/Message";
 import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
 import ReportIcon from "@mui/icons-material/Report";
 // import { Link } from "@mui/material";
@@ -86,13 +83,14 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 export default function SideBar({ open, setOpen, children }) {
   const theme = useTheme();
 
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
-
   const handleDrawerClose = () => {
     setOpen(false);
   };
+
+  const newElement = React.cloneElement(children, {
+    open,
+    setOpen,
+  });
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -165,7 +163,9 @@ export default function SideBar({ open, setOpen, children }) {
             <ListItem key={item.text} disablePadding>
               <Link to={item.link} className="link">
                 <ListItemButton>
-                  <ListItemIcon>{item.icon}</ListItemIcon>
+                  <ListItemIcon style={{ color: "#7b3efb" }}>
+                    {item.icon}
+                  </ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItemButton>
               </Link>
@@ -173,7 +173,7 @@ export default function SideBar({ open, setOpen, children }) {
           ))}
         </List>
       </Drawer>
-      <Main open={open}>{children}</Main>
+      <Main open={open}>{newElement}</Main>
     </Box>
   );
 }

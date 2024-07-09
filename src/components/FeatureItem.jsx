@@ -1,12 +1,10 @@
 import React from "react";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
-import { green } from "@mui/material/colors";
-import { colors } from "@mui/material";
 
 const FeatureItem = ({ item }) => {
   return (
-    <div className="w-full shadow-xl p-5 rounded-md flex flex-col">
+    <div className="w-full shadow-xl shadow-primary-light  p-5 rounded-md flex flex-col ">
       <h2 className="mb-3 text-lg">{item.title}</h2>
       <span className="flex flex-row justify-between">
         <h1 className="font-bold text-3xl antialiased">{item.body}</h1>{" "}

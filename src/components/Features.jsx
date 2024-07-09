@@ -1,8 +1,5 @@
 import React from "react";
 import FeatureItem from "./FeatureItem";
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-import Stack from "@mui/material/Stack";
 
 const Features = () => {
   const featureItems = [
@@ -21,7 +18,7 @@ const Features = () => {
       description: "Compared to last month",
     },
     {
-      title: "Const",
+      title: "Cost",
       body: "$1,512",
       rate: "+2.4",
       positive: true,
@@ -30,7 +27,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="flex flex-row space-x-3">
+    <div className="flex flex-row space-x-3 mt-3">
       {featureItems.map((item) => (
         <FeatureItem item={item} />
       ))}

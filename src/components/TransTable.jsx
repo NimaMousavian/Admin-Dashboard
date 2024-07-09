@@ -7,7 +7,6 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { Badge } from "@mui/material";
-import { red, lightBlue } from "@mui/material/colors";
 
 const statusColor = (status) => {
   if (status === "Completed") return "success";
